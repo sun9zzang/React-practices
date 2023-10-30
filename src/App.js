@@ -1,12 +1,12 @@
-import './App.css';
-import HeaderComp from './Header.js';
-import ContentComp from './Content.js';
+import "./style/App.scss";
+import GlobalHeader from "./Header.js";
+import Main from "./Main.js";
 
 function App() {
   return (
     <div className="App">
-      <HeaderComp />
-      <ContentComp />
+      <GlobalHeader />
+      <Main />
     </div>
   );
 }

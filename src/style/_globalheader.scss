@@ -1,0 +1,126 @@
+.globalheader {
+  display: block;
+  width: 100%;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.globalnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+  background: #1a1b1e;
+  user-select: none;
+
+  &-menu {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    ul {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      padding: 0;
+    }
+
+    &-item {
+      a,
+      span {
+        color: #a8a8a9;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      a {
+        transition: all 0.1s ease;
+
+        &:hover {
+          transition: all 0.22s ease;
+          color: #f0f0f0;
+        }
+
+        &.is--active {
+          color: #f0f0f0;
+        }
+      }
+
+      span {
+        cursor: default;
+      }
+    }
+  }
+
+  &-submenu {
+    ul {
+      display: flex;
+      align-items: center;
+      column-gap: 14px;
+      padding: 0;
+
+      li:first-child {
+        border: 1px solid #7a7c85;
+        border-radius: 9px;
+      }
+    }
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      cursor: pointer;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #7a7c85;
+        font-size: 18px;
+        transition: all 0.1s ease;
+      }
+
+      &:hover {
+        span {
+          color: #e4e5e7;
+          transition: all 0.1s ease;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 9px;
+      }
+    }
+  }
+
+  &-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    background-color: #f0f0f0;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    span {
+      color: #1a1b1e;
+      font-size: 20px;
+      position: relative;
+      top: 0;
+      left: 0.5px;
+    }
+  }
+}
